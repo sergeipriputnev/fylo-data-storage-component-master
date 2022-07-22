@@ -45,7 +45,8 @@ nav {
 
 .bar-section {
   height: 155px;
-  min-width: 540px;
+  max-width: 540px;
+  min-width: 50%;
   border-radius: 20px;
   margin-left: 30px;
   position: relative;
@@ -59,6 +60,7 @@ nav {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  width: auto;
 }
 
 a{
@@ -129,7 +131,7 @@ a{
 }
 
 .bar-holder{
-  width: 455px;
+  width: 100%;
   height: 20px;
   background-color:var(--clr-neutral-400);
   border-radius: 10px;
@@ -140,7 +142,7 @@ a{
 }
 
 .bar{
-  width: 335px;
+  width: 70%;
   height: 16px;
   border-radius: 8px ;
   background-image: var(--clr-primary);
@@ -162,4 +164,37 @@ a{
   display: flex;
   justify-content: space-between;
   font-weight: 700;
+}
+
+@media screen and (max-width:840px){
+.cards{
+flex-direction: column;
+align-items: center;
+margin: auto;
+position:relative;
+justify-content: center;
+top: 50%;
+transform: translateY(-50%);
+width: fit-content;
+}
+
+body{
+  background-size: cover;
+}
+
+.bar-section{
+  margin-left: 0;
+  margin-top: 20px;
+}
+
+.remain{
+  top:130px;
+  left: 25%;
+}
+
+.arrow{
+  display: none;
+}
+
+
 }
